@@ -1,4 +1,4 @@
-export default class Nodo {
+module.exports = class Nodo {
 
     constructor(info) {
         this.info = info

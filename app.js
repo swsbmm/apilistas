@@ -1,16 +1,18 @@
-import lista from './ListaDoble'
-let listaNumeroUno = new lista();
-let listaNumeroDos = new lista();
+const lista = require('./ListaDoble')
 
-// sumarDosNumero(a,b){
-// }
+module.exports = function () {
+  let listaNumeroUno = new lista()
+  let listaNumeroDos = new lista()
 
-listaNumeroUno.insFinal(1);
-listaNumeroUno.insFinal(2);
-listaNumeroUno.insFinal(4);
-listaNumeroUno.insFinal(6);
+  // sumarDosNumero(a,b){
+  // }
 
-listaNumeroUno.imprimirAdelante();
+  listaNumeroUno.insFinal(1)
+  listaNumeroUno.insFinal(2)
+  listaNumeroUno.insFinal(4)
+  listaNumeroUno.insFinal(6)
 
-listaNumeroUno.imprimeAtras();
+  listaNumeroUno.imprimirAdelante()
 
+  listaNumeroUno.imprimeAtras()
+}
